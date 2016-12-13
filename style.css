@@ -907,9 +907,25 @@ header {
         display: none; }
       .past-event-gallery .gallery-wrapper div h3 {
         position: absolute; }
+      .past-event-gallery .gallery-wrapper div .past-left {
+        top: 100px;
+        z-index: 999; }
+      .past-event-gallery .gallery-wrapper div .past-right {
+        top: -180px;
+        font-size: 2rem; }
   .load-more {
     font-size: 0.8rem;
     margin: 30px auto; } }
+
+@media only screen and (max-width: 600px) {
+  .past-event-gallery .gallery-wrapper div .past-right {
+    top: -130px;
+    font-size: 1.5rem; } }
+
+@media only screen and (max-width: 450px) {
+  .past-event-gallery .gallery-wrapper div .past-right {
+    top: -100px;
+    font-size: 1.2rem; } }
 
 .fromTopIn {
   transition: transform 1s ease, opacity 1s ease;
